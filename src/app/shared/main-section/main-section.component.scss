@@ -1,10 +1,21 @@
-section {
+h1 {
+    background: linear-gradient(90deg, rgba(82,34,208,1) 35%, rgba(255,97,150,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+    font-size: 40px;
+    margin: 0 auto; 
+    width: fit-content; 
+    margin-top: 60px;
+}
+
+section {       
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    margin-top: 80px;
+    margin-top: 60px;
 
     .main-content {
         display: flex;
@@ -12,6 +23,7 @@ section {
         align-items: center;
         justify-content: center;
         gap: 12px;
+    }
 
         span {
             text-transform: uppercase;
@@ -28,9 +40,23 @@ section {
             font-size: 40px;
             margin: 0;
         }
-    }
-
+        .pri {
+            margin-left: 250px;
+            margin-right: 10px;
+        }
+        p{
+            font-size: 25px;
+        }
 }
+
+
+
+
+
+.image {
+    margin-right: 300px;
+}
+
 
 @media (min-width: 1080px) {
     section {
@@ -42,7 +68,7 @@ section {
             max-width: 50%;
 
             h1 {
-                font-size: 56px;
+                font-size: 100px;
             }
         }
 
