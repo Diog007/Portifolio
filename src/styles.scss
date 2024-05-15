@@ -1,14 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
-html, body {
-    height: 100%;
+* {
     margin: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.content {
-    flex: 1;
-}
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .section {
+    padding: 30em 0 2em;
+    overflow: hidden;
+    height: 100vh;
+    min-height: 100vh;
+  }
+  
+  .titulo-section {
+    text-align: center;
+    position: relative;
+  }
