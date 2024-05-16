@@ -6,11 +6,12 @@ import { FundoComponent } from './components/fundo/fundo.component';
 import { SobreComponent } from './components/sobre/sobre.component';
 import Aos, * as AOS from 'aos'
 import { isPlatformBrowser } from '@angular/common';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, FormacaoComponent, FundoComponent, SobreComponent],
+  imports: [RouterOutlet, NavbarComponent, FormacaoComponent, FundoComponent, SobreComponent, SkillsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

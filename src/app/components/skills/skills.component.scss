@@ -1,0 +1,92 @@
+.skills{
+    justify-content:center;
+    align-items:center;
+    padding-top: 140px;
+}
+
+.imagemSkill{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding-right: 2px;
+    height: 120px;
+    
+}
+
+.titulo-section {
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 2em;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+  
+  .hard-skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4em;
+    background-color: #1e3644;
+    border-radius: 5em;
+    padding: 5em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    background-color: #5e7484;
+    padding: 2.0em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.925);
+    transition: all 8s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 18px;
+
+  }
+  
+  .icon-hs {
+    font-size: 4em;
+    color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .icon-hs:hover {
+    color: #ce0f55;
+  }
+  
+  .titulo-hs {
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #555;
+  }
+
+  .skillicon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 60px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .hard-skills {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .hard-skills {
+      grid-template-columns: 1fr;
+    }
+  }
+  
