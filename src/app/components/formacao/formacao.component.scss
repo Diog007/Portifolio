@@ -1,5 +1,5 @@
 ul {
-    padding: 20;
+    padding: 0;
   }
   
   .move-up {
@@ -8,7 +8,7 @@ ul {
   
   .titulo-section {
     position: relative;
-    top: -2em;
+    top: -3em;
     background: linear-gradient(90deg, rgba(82,34,208,1) 35%, rgb(17, 41, 94) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -36,7 +36,7 @@ ul {
   
   .formacao-card {
     position: relative;
-    border-radius: 1em;
+    border-radius: 4em;
     overflow: hidden;
     width: 35vw;
     height: 160px;
@@ -45,7 +45,7 @@ ul {
     list-style: none;
     list-style-type: none;
     box-shadow: 0 10px 20px rgba(32, 23, 38, 0.5);
-    background-color: rgb(73, 22, 139);
+    background-color: #344b59;
     border-right: 1px solid rgba(24, 7, 7, 0.5);
     border-bottom: 1px solid rgba(206, 9, 9, 0.5);
     margin: 1em 0;
@@ -67,18 +67,18 @@ ul {
   }
   
   .formacao-card-content h3 {
-    font-size: calc(.6em + .3vw);
+    font-size: 36px;
   }
   
   .text {
     color: #c2c0c0;
-    font-size: calc(.4em + .3vw);
+    font-size: 24px;
     letter-spacing: 1px;
     margin-bottom: 0.5em;
   }
   
   .encerra {
-    font-size: calc(.4em + .3vw);
+    font-size: 16px;
     position: relative;
     top: -.5em;
   }
