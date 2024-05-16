@@ -1,17 +1,23 @@
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   border-bottom: 0.6px solid #f3f3f3;
-  padding: 1px 220px;
+  padding: 10px 230px;
+  background-color: #ffffff;
+  z-index: 1000;
 }
 
 img {
-  width: 2.2em;
-  height: 2.2em;
+  width: 2.8em;
+  height: 2.3em;
 }
 
 .nav-item {
   position: relative;
-  margin-left: 1.5em;
-  font-size: calc(.6em + .5vw);
+  margin-left: 0.5em;
+  font-size: calc(.8em + .6vw);
   text-align: center;
 }
 
@@ -24,7 +30,7 @@ img {
   width: 0;
   border-radius: 2px;
   background-color: #cd1357;
-  background: #0c3d3d;
+  background: #09212e;
   background: -webkit-linear-gradient(to right, #63304f, #13124f);
   background: linear-gradient(to right, #0e0d4c, #9981e8);
   transition: 0.4s ease;
