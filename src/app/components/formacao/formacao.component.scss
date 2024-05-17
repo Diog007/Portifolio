@@ -1,3 +1,7 @@
+.formacao {
+  background-color: #2f647f;
+}
+
 ul {
     padding: 0;
   }
@@ -9,7 +13,7 @@ ul {
   .titulo-section {
     position: relative;
     top: -3em;
-    background: linear-gradient(90deg, rgba(82,34,208,1) 35%, rgb(17, 41, 94) 100%);
+    background: #001e1f;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: block;
@@ -36,7 +40,7 @@ ul {
   
   .formacao-card {
     position: relative;
-    border-radius: 4em;
+    border-radius: 1em;
     overflow: hidden;
     width: 35vw;
     height: 160px;
@@ -45,7 +49,7 @@ ul {
     list-style: none;
     list-style-type: none;
     box-shadow: 0 10px 20px rgba(32, 23, 38, 0.5);
-    background-color: #344b59;
+    background-color: #182b36;
     border-right: 1px solid rgba(24, 7, 7, 0.5);
     border-bottom: 1px solid rgba(206, 9, 9, 0.5);
     margin: 1em 0;
