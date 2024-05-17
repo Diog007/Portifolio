@@ -1,4 +1,4 @@
-#sobre {
+section {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -64,26 +64,11 @@
     font-size: 24px;
   }
   
-  .curriculo-button {
-    background-color: white;
-    color: black;
-    font-weight: 800;
-  }
-  
-  .curriculo-button:hover {
-    box-shadow: 1px 7px 25px 1px rgba(255, 255, 255, 0.8);
-    color: white;
-    border: none;
-  }
-  
-  .curriculo-button:active {
-    opacity: 0.7;
-  }
 
   .linha {
     display: flex;
     justify-content: center;
-    align-items: center; /* Centraliza verticalmente */
+    align-items: center; 
     flex-direction: column;
     text-align: center;
     border-bottom: 2px solid rgb(0, 0, 0);
