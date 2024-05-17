@@ -7,11 +7,15 @@ import { SobreComponent } from './components/sobre/sobre.component';
 import Aos, * as AOS from 'aos'
 import { isPlatformBrowser } from '@angular/common';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ProjetosComponent } from './components/projetos/projetos.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, FormacaoComponent, FundoComponent, SobreComponent, SkillsComponent],
+  imports: [RouterOutlet, NavbarComponent, FormacaoComponent,
+     FundoComponent, SobreComponent, SkillsComponent, ProjetosComponent, FooterComponent, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
