@@ -41,11 +41,24 @@
   gap: 40px;
 }
 
-h1 {
+.nome {
   font-size: 65px;
   font-weight: 700;
   color: var(--title-color);
 }
+
+.nome:hover {
+  background-image: linear-gradient(to right, #6f6cb6, #4e4baa, #3a29ad, #03088f, #e70808);
+  background-size: 200% 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: background-position 6.5s ease;
+}
+.nome:hover {
+  background-position: -200% 0;
+}
+
 
 h2 {
   font-size: 45px;
