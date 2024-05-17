@@ -1,0 +1,132 @@
+#projetos {
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-top: 110px;
+  background-color: #2f647f;
+
+}
+
+.botoes {
+  gap: 1px;
+  display: flex;
+}
+
+.container-title {
+  margin-bottom: 90px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.title-project {
+  color: var(--subtitle-project);
+  font-weight: 700;
+  border-bottom: var(--line-color);
+  width: 50%;
+  font-size: 50px;
+}
+
+.container-project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  
+}
+
+.cards {
+  width: 250px;
+  height: 315px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: #4b3094;
+  background: #e63010;
+  transition: 0.6s;
+  background-color: #ddecebed ;
+}
+
+.cards:hover {
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+.card-img img {
+  width: 250px;
+  height: 160px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.title-card {
+  font-size: 24px;
+  color: #e63010;
+  font-weight: 600;
+}
+
+.text-card {
+  font-size: 15px;
+  color: var(--text-color);
+  font-weight: 600;
+  width: 80%;
+  text-align: center;
+}
+
+
+
+
+.botoes {
+  display: flex;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  gap: 25px;
+  margin-top: 12px; /* Adiciona margem superior */
+}
+
+.botaoname {
+  text-decoration: none; /* Remove sublinhado do link */
+}
+
+.botao {
+
+  display: inline-block;
+  padding: 8px 6px; /* Adiciona espaçamento interno */
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(90deg, hsl(191, 83%, 28%) 35%, rgba(55, 39, 104, 0.655) 100%);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer; /* Muda o cursor para ponteiro */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.botao:hover {
+  background-color: #6741c7; /* Muda a cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+}
+
+.botao:active {
+  background-color: #4b3094; /* Muda a cor de fundo ao clicar */
+  transform: scale(0.95); /* Diminui ligeiramente o tamanho */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
