@@ -1,22 +1,16 @@
 .formacao {
   background-color: #2f647f;
+  padding-top: 400px;
 }
 
-ul {
-    padding: 0;
-  }
-  
-  .move-up {
-    font-weight: bold;
-  }
+
   
   .titulo-section {
     position: relative;
-    top: -3em;
+    top: -2em;
     background: #000000;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: block;
+    display: flex;
     font-size: 52px;
     margin: 0 auto; 
     width: fit-content; 
@@ -24,17 +18,15 @@ ul {
   }
   
   .cards-container {
-    position: relative;
-    top: -2em;
-    padding-left: 180px;
-    padding-right: 180px;
+    top: -1em;
   }
   
   .formacao-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    justify-items: center;
-    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
 }
 
   
