@@ -4,6 +4,7 @@
   justify-content: center;
   background-color: #2f647f;
   height: 100vh;
+  padding: 20px;
 }
 
 .container {
@@ -11,38 +12,44 @@
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
-  padding: 40px;
+  padding: 20px;
   gap: 20px;
   border-radius: 1%;
   background-color: rgba(9, 71, 104, 0.299);
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .text-image {
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .image {
   border-radius: 50%;
-  height: 450px;
-  width: 450px;
+  max-width: 100%;
+  height: auto;
 }
 
 .text-botao {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
 }
 
 .botoes {
   display: flex;
-  padding-right: 1020px;
-  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .nome {
-  font-size: 65px;
+  font-size: 40px;
   font-weight: 700;
   color: var(--title-color);
 }
@@ -55,20 +62,20 @@
   -webkit-background-clip: text;
   transition: background-position 6.5s ease;
 }
+
 .nome:hover {
   background-position: -200% 0;
 }
 
-
 h2 {
-  font-size: 45px;
+  font-size: 25px;
   font-weight: 500;
   color: var(--subtitle-color);
 }
 
 .botao {
-  font-size: 20px;
-  padding: 12px 24px;
+  font-size: 16px;
+  padding: 10px 20px;
   font-weight: 500;
   color: #DBFFFF;
   background: linear-gradient(90deg, rgb(122, 165, 220) 35%, rgb(9, 84, 215) 100%);
@@ -90,7 +97,54 @@ h2 {
 }
 
 .botao-icon {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .nome {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .botao {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+
+  .botoes {
+    gap: 25px;
+  }
+
+  .text-image {
+    gap: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nome {
+    font-size: 65px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  .image {
+    height: 450px;
+    width: 450px;
+  }
+
+  .text-image {
+    gap: 80px;
+  }
+
+  .botoes {
+    gap: 35px;
+    padding-right: 800px;
+  }
 }
