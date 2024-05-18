@@ -1,0 +1,38 @@
+section {
+    height: 30vh;
+    background-color:#477c97 ;
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px;
+    gap: 36px;
+  
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      button {
+        width: 16rem;
+        height: 5rem;
+        border: none;
+        border-radius: 0.5rem;
+        margin-bottom: 5rem;
+        background-color: var(--purple);
+
+      }
+      .botao:hover {
+        background-color: #6741c7;
+        transform: scale(1.05);
+      }
+  
+      button:hover {
+        opacity: 0.2;
+      }
+    }
+  }
+  
