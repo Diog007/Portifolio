@@ -10,12 +10,14 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjetosComponent } from './components/projetos/projetos.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, NavbarComponent, FormacaoComponent,
-     FundoComponent, SobreComponent, SkillsComponent, ProjetosComponent, FooterComponent, HomeComponent],
+     FundoComponent, SobreComponent, SkillsComponent,
+      ProjetosComponent, FooterComponent, HomeComponent, ContactComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
