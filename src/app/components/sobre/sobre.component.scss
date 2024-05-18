@@ -1,78 +1,105 @@
 section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #477c97;
-    border-top: 1px solid rgb(0, 0, 0);
-    border-bottom: 1px solid rgb(0, 0, 0);
-    border-left: 1px solid rgb(0, 0, 0);
-    border-right: 1px solid rgb(0, 0, 0);
-  
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #477c97;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 20px;
+  height: 100vh;
+}
+
+.container-title {
+  margin-bottom: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.title-about,
+.title-contact {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  width: 70%;
+  font-size: 46px;
+}
+
+.container-about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.my-foto {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 20px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.bem-vindos {
+  color: rgb(0, 0, 0);
+  line-height: 60px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.text-about {
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  width: 100%;
+  max-width: 600px;
+  line-height: 32px;
+  text-indent: 1.4em;
+  font-size: 24px;
+}
+
+.linha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  width: 70%;
+  padding-top: 25px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .container-about {
+      flex-direction: column;
   }
 
-  .container-title {
-    margin-bottom: 40px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+  .container-text, .foto {
+      width: 100%;
+      text-align: center;
   }
-  
-  .title-about,
-  .title-contact {
-    color: rgb(0, 0, 0);
-    font-weight: 600;
-    border-bottom: 2px solid rgb(0, 0, 0);
-    width: 70%;
-    font-size: 46px;
-  }
-  
-  .container-about {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  
-  .my-foto {
-    width: 450px;
-    margin-right: 90px;
-    border-top: 1px solid rgb(0, 0, 0);
-    border-bottom: 1px solid rgb(0, 0, 0);
-    border-left: 1px solid rgb(0, 0, 0);
-    border-right: 1px solid rgb(0, 0, 0);
-  }
-  
-  .container-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 120px;
-  }
-  
-  .bem-vindos {
-    color: rgb(0, 0, 0);
-    line-height: 60px;
-    font-size: 28px;
-  }
-  
+
   .text-about {
-    color: rgb(0, 0, 0);
-    text-align: justify;
-    width: 600px;
-    line-height: 32px;
-    text-indent: 1.4em;
-    font-size: 24px;
+      font-size: 18px;
+      line-height: 28px;
   }
-  
+
+  .bem-vindos {
+      font-size: 24px;
+      line-height: 40px;
+  }
+
+  .my-foto {
+      margin: 20px 0;
+      width: 80%;
+  }
 
   .linha {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-direction: column;
-    text-align: center;
-    border-bottom: 2px solid rgb(0, 0, 0);
-    width: 70%;
-    padding-top: 25px;
-    margin-left: 310px;
+      width: 90%;
+  }
 }
