@@ -1,8 +1,9 @@
 #projetos {
-  padding-left: 180px;
-  padding-right: 180px;
-  padding-top: 110px;
+  padding-left: 280px;
+  padding-right: 280px;
+  padding-top: 108px;
   background-color: #2f647f;
+  height: 100vh;
 
 }
 
@@ -12,16 +13,14 @@
 }
 
 .container-title {
-  margin-bottom: 90px;
+  margin-bottom: 40px;
   text-align: center;
   display: flex;
   justify-content: center;
 }
 
 .title-project {
-  color: var(--subtitle-project);
   font-weight: 700;
-  border-bottom: var(--line-color);
   width: 50%;
   font-size: 50px;
 }
@@ -40,12 +39,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 10px;
   overflow: hidden;
   box-shadow: #4b3094;
   background: #e63010;
   transition: 0.6s;
   background-color: #ddecebed ;
+  border-top: 2px solid rgb(0, 0, 0);
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-left: 2px solid rgb(0, 0, 0);
+  border-right: 2px solid rgb(0, 0, 0);
 }
 
 .cards:hover {
@@ -79,42 +82,39 @@
   text-align: center;
 }
 
-
-
-
 .botoes {
   display: flex;
-  justify-content: center; /* Centraliza os botões horizontalmente */
+  justify-content: center; 
   gap: 25px;
-  margin-top: 12px; /* Adiciona margem superior */
+  margin-top: 12px; 
 }
 
 .botaoname {
-  text-decoration: none; /* Remove sublinhado do link */
+  text-decoration: none; 
 }
 
 .botao {
 
   display: inline-block;
-  padding: 8px 6px; /* Adiciona espaçamento interno */
+  padding: 8px 6px; 
   font-size: 16px;
   font-weight: 500;
   color: white;
   background: linear-gradient(90deg, hsl(191, 83%, 28%) 35%, rgba(55, 39, 104, 0.655) 100%);
   border: none;
   border-radius: 8px;
-  cursor: pointer; /* Muda o cursor para ponteiro */
+  cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
 }
 
 .botao:hover {
-  background-color: #6741c7; /* Muda a cor de fundo ao passar o mouse */
-  transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+  background-color: #6741c7;
+  transform: scale(1.05);
 }
 
 .botao:active {
-  background-color: #4b3094; /* Muda a cor de fundo ao clicar */
-  transform: scale(0.95); /* Diminui ligeiramente o tamanho */
+  background-color: #4b3094; 
+  transform: scale(0.95); 
 }
 
 
