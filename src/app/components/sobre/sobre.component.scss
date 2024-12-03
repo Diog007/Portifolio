@@ -1,103 +1,96 @@
-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #477c97;
-  border: 1px solid rgb(0, 0, 0);
-  padding: 20px;
-  height: 100vh;
+#sobre {
+  background-color: #f0f4f8;
+  padding: 100px 20px;
+  font-family: 'Roboto', sans-serif;
+  border-top: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  border-left: 1px solid rgb(0, 0, 0);
+  border-right: 1px solid rgb(0, 0, 0);
 }
 
 .container-title {
-  margin-bottom: 40px;
   text-align: center;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 50px;
 }
 
-.title-about,
-.title-contact {
-  color: rgb(0, 0, 0);
-  font-weight: 600;
-  border-bottom: 2px solid rgb(0, 0, 0);
-  width: 70%;
-  font-size: 46px;
+.title-about {
+  color: #333;
+  font-size: 45px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.title-about::after {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background-color: #477c97;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
 }
 
 .container-about {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  gap: 190px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.foto {
+  flex: 1;
+  max-width: 460px;
 }
 
 .my-foto {
   width: 100%;
-  max-width: 450px;
-  margin: 0 20px;
-  border: 1px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .container-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  flex: 2;
+  max-width: 600px;
 }
 
 .bem-vindos {
-  color: rgb(0, 0, 0);
-  line-height: 60px;
+  color: #477c97;
   font-size: 28px;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
 .text-about {
-  color: rgb(0, 0, 0);
-  text-align: justify;
-  width: 100%;
-  max-width: 600px;
-  line-height: 30px;
-  text-indent: 1.4em;
-  font-size: 26px;
+  color: #555;
+  font-size: 19px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .linha {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  border-bottom: 2px solid rgb(0, 0, 0);
-  width: 70%;
-  padding-top: 25px;
-  margin: 0 auto;
+  margin: 60px auto 0;
+  width: 80%;
+  border-bottom: 2px solid #ccc;
 }
 
 @media only screen and (max-width: 767px) {
   .container-about {
       flex-direction: column;
+      align-items: center;
   }
 
-  .container-text, .foto {
-      width: 100%;
-      text-align: center;
-  }
-
-  .text-about {
-      font-size: 18px;
-      line-height: 28px;
+  .foto, .container-text {
+      max-width: 100%;
   }
 
   .bem-vindos {
       font-size: 24px;
-      line-height: 40px;
   }
 
-  .my-foto {
-      margin: 20px 0;
-      width: 80%;
+  .text-about {
+      font-size: 16px;
   }
 
   .linha {

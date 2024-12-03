@@ -1,8 +1,17 @@
+:root {
+  --primary-color: #2f647f;
+  --secondary-color: rgba(9, 71, 104, 0.299);
+  --title-color: #ffffff;
+  --subtitle-color: #dbffff;
+  --button-bg-color: linear-gradient(90deg, rgb(122, 165, 220) 35%, rgb(9, 84, 215) 100%);
+  --button-bg-hover: linear-gradient(90deg, rgb(55, 108, 200) 35%, rgb(14, 31, 122) 100%);
+}
+
 #home {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2f647f;
+  background-color: var(--primary-color);
   height: 100vh;
   padding: 20px;
 }
@@ -14,8 +23,8 @@
   border: 1px solid black;
   padding: 20px;
   gap: 20px;
-  border-radius: 1%;
-  background-color: rgba(9, 71, 104, 0.299);
+  border-radius: 8px;
+  background-color: var(--secondary-color);
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -28,95 +37,95 @@
   justify-content: center;
 }
 
-.image {
+.profile-image {
   border-radius: 50%;
   max-width: 100%;
   height: auto;
 }
 
-.text-botao {
+.text-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.botoes {
+.buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
-.nome {
+.name {
   font-size: 40px;
   font-weight: 700;
   color: var(--title-color);
+  transition: background-position 6.5s ease;
 }
 
-.nome:hover {
+.name:hover {
   background-image: linear-gradient(to right, #6f6cb6, #4e4baa, #3a29ad, #03088f, #e70808);
   background-size: 200% 100%;
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  transition: background-position 6.5s ease;
-}
-
-.nome:hover {
   background-position: -200% 0;
 }
 
-h2 {
+.subtitle {
   font-size: 25px;
   font-weight: 500;
   color: var(--subtitle-color);
 }
 
-.botao {
+.button {
+  display: inline-flex;
+  align-items: center;
   font-size: 16px;
   padding: 10px 20px;
   font-weight: 500;
-  color: #DBFFFF;
-  background: linear-gradient(90deg, rgb(122, 165, 220) 35%, rgb(9, 84, 215) 100%);
+  color: var(--subtitle-color);
+  text-decoration: none;
+  background: var(--button-bg-color);
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-.botao:hover {
-  background: linear-gradient(90deg, rgb(55, 108, 200) 35%, rgb(14, 31, 122) 100%);
+.button:hover {
+  background: var(--button-bg-hover);
   transform: scale(1.05);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.botao:active {
+.button:active {
   transform: scale(0.98);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.botao-icon {
+.button-icon {
   width: 20px;
   height: 20px;
-  vertical-align: middle;
+  margin-right: 8px;
 }
 
 @media (min-width: 768px) {
-  .nome {
+  .name {
     font-size: 50px;
   }
 
-  h2 {
+  .subtitle {
     font-size: 30px;
   }
 
-  .botao {
+  .button {
     font-size: 18px;
     padding: 12px 24px;
   }
 
-  .botoes {
+  .buttons {
     gap: 25px;
   }
 
@@ -126,15 +135,15 @@ h2 {
 }
 
 @media (min-width: 1024px) {
-  .nome {
+  .name {
     font-size: 65px;
   }
 
-  h2 {
+  .subtitle {
     font-size: 45px;
   }
 
-  .image {
+  .profile-image {
     height: 450px;
     width: 450px;
   }
@@ -143,8 +152,7 @@ h2 {
     gap: 80px;
   }
 
-  .botoes {
+  .buttons {
     gap: 35px;
-    padding-right: 800px;
   }
 }

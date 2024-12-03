@@ -1,8 +1,8 @@
 .skills{
     justify-content:center;
     align-items:center;
-    padding-top: 170px;
-    background-color: #477c97;
+    padding-top: 120px;
+    background-color: #f0f4f8;
     border-top: 1px solid rgb(0, 0, 0);
     border-bottom: 1px solid rgb(0, 0, 0);
     border-left: 1px solid rgb(0, 0, 0);
@@ -36,9 +36,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 4em;
-    background-color: #1e3644;
+    background-color: #b9b9b9;
     border-radius: 1em;
-    padding: 5em;
+    padding: 7em;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
   

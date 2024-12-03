@@ -1,7 +1,10 @@
 .formacao {
-  background-color: #2f647f;
-  padding-top: 250px;
-  
+  background-color: #ffffff;
+  padding-top: 210px;
+  border-top: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
+  border-left: 1px solid rgb(0, 0, 0);
+  border-right: 1px solid rgb(0, 0, 0);
 }
 
 .titulo-section {
@@ -40,7 +43,7 @@
   flex-direction: row;
   list-style: none;
   box-shadow: 0 10px 20px rgba(32, 23, 38, 0.5);
-  background-color: #182b369b;
+  background-color: #acacac;
   border-right: 1px solid rgba(24, 7, 7, 0.5);
   border-bottom: 1px solid rgba(42, 12, 88, 0.348);
   margin: 1em auto;
