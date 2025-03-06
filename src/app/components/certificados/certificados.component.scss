@@ -1,21 +1,22 @@
-#projetos {
-  padding: 100px 160px;
-  background-color: #0f1119; /* Fundo escuro estilo cyber */
-  height: auto;
-  border: 2px solid #00e5ff; /* Azul Neon */
+/* Estilização principal da seção de Certificados */
+#certificados {
+  padding: 100px 156px;
+  background-color: #0f1119;
   box-shadow: 0px 0px 15px rgba(0, 229, 255, 0.5);
+
 }
 
-/* Título principal */
+/* Título centralizado */
 .container-title {
   text-align: center;
 }
 
+/* Estilo do título da seção */
 .title-project {
   font-size: 50px;
   font-weight: bold;
   color: #00e5ff; /* Azul Neon */
-  text-shadow: 0px 0px 15px rgba(0, 229, 255, 0.8);
+  text-shadow: 0 0 20px rgba(0, 229, 255, 0.9);
 }
 
 /* Subtítulo */
@@ -23,15 +24,16 @@
   font-size: 18px;
   color: #a5f2ff;
   font-family: "Courier New", monospace;
-  text-shadow: 0px 0px 5px rgba(0, 229, 255, 0.5);
+  text-shadow: 0 0 5px rgba(0, 229, 255, 0.5);
 }
 
-/* Organização dos projetos */
+/* Organização dos certificados */
 .container-project {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
+  margin-top: 50px;
 }
 
 /* Estilização dos cards */
@@ -44,62 +46,55 @@
   background: rgba(0, 229, 255, 0.1);
   border: 2px solid #00e5ff; /* Azul Neon */
   border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 229, 255, 0.5);
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
   transition: all 0.3s ease-in-out;
-}
-
-.cyber-card:hover {
-  transform: scale(1.08);
-  box-shadow: 0px 0px 20px rgba(0, 229, 255, 1);
-  background-color: rgba(0, 229, 255, 0.2);
-}
-
-/* Imagem do projeto */
-.card-img img {
-  width: 250px;
-  height: 160px;
-  border-bottom: 2px solid #00e5ff;
-}
-
-/* Texto do card */
-.card-text {
   text-align: center;
   padding: 15px;
 }
 
-/* Título do card */
-.title-card {
-  font-size: 22px;
-  color: #00e5ff; /* Azul Neon */
-  font-weight: bold;
+.cyber-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(0, 229, 255, 1);
+  background-color: rgba(0, 229, 255, 0.2);
 }
 
-/* Descrição do projeto */
+/* Logo da certificação */
+.cert-logo {
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  object-fit: contain;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.6);
+}
+
+/* Título do certificado */
+.title-card {
+  font-size: 20px;
+  font-weight: bold;
+  color: #00e5ff; /* Azul Neon */
+  margin: 10px 0;
+  text-shadow: 0px 0px 10px rgba(0, 229, 255, 0.8);
+}
+
+/* Texto informativo */
 .text-card {
   font-size: 14px;
   color: #a5f2ff;
-  font-weight: 500;
 }
 
-/* Botões */
-.botoes {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
-}
-
-/* Botão */
+/* Botão para visualizar credenciais */
 .botao {
   padding: 8px 10px;
   font-size: 14px;
   font-weight: bold;
-  background: linear-gradient(90deg, #0048ff 35%, #002b80 100%);
-  border: 1px solid #00e5ff;
+  background: linear-gradient(90deg, #0048ff 35%, #002b80 100%); /* Azul Cibernético */
+  border: 1px solid #00e5ff; /* Azul Neon */
   color: white;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  margin-top: 10px;
   box-shadow: 0px 0px 10px rgba(0, 229, 255, 0.6);
 }
 
@@ -107,8 +102,4 @@
   background: linear-gradient(90deg, #0084ff 35%, #0033aa 100%);
   transform: scale(1.05);
   box-shadow: 0px 0px 15px rgba(0, 229, 255, 1);
-}
-
-.botao:active {
-  transform: scale(0.95);
 }

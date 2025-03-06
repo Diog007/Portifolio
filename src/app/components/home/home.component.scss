@@ -1,32 +1,26 @@
-:root {
-  --primary-color: #2f647f;
-  --secondary-color: rgba(9, 71, 104, 0.299);
-  --title-color: #ffffff;
-  --subtitle-color: #dbffff;
-  --button-bg-color: linear-gradient(90deg, rgb(122, 165, 220) 35%, rgb(9, 84, 215) 100%);
-  --button-bg-hover: linear-gradient(90deg, rgb(55, 108, 200) 35%, rgb(14, 31, 122) 100%);
-}
-
 #home {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary-color);
+  background-color: #0f1119;
   height: 100vh;
   padding: 20px;
+  
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
-  padding: 20px;
+  border: 2px solid rgba(0, 229, 255, 0.8);
+  box-shadow: 0px 0px 15px rgba(0, 229, 255, 0.5);
+  padding: 150px;
   gap: 20px;
   border-radius: 8px;
-  background-color: var(--secondary-color);
-  max-width: 100%;
+  background-color: #161b22;
+  max-width: 80%;
   box-sizing: border-box;
+  
 }
 
 .text-image {
@@ -38,9 +32,44 @@
 }
 
 .profile-image {
-  border-radius: 50%;
+  border-radius: 25%;
   max-width: 100%;
-  height: auto;
+  height: 280px;
+  width: 350px;
+  border: 3px solid #00e5ff;
+  box-shadow: 0px 0px 15px rgba(0, 229, 255, 0.9);
+  animation: neon-glow 5s infinite alternate, glitch 0.3s infinite;
+  filter: brightness(1.2) contrast(1.2);
+}
+
+@keyframes neon-glow {
+  0% {
+    box-shadow: 0 0 10px #00e5ff, 0 0 20px #00e5ff;
+  }
+  100% {
+    box-shadow: 0 0 15px #00e5ff, 0 0 30px #00e5ff;
+  }
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(-2px, 2px);
+    filter: hue-rotate(10deg);
+  }
+  50% {
+    transform: translate(2px, -2px);
+    filter: hue-rotate(-10deg);
+  }
+  75% {
+    transform: translate(-2px, -2px);
+    filter: hue-rotate(15deg);
+  }
+  100% {
+    transform: translate(2px, 2px);
+  }
 }
 
 .text-content {
@@ -50,33 +79,38 @@
   text-align: center;
 }
 
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
 .name {
-  font-size: 40px;
+  font-size: clamp(32px, 5vw, 65px);
   font-weight: 700;
-  color: var(--title-color);
-  transition: background-position 6.5s ease;
+  color: #00e5ff;
+  font-family: "Courier New", monospace;
+  text-shadow: 0px 0px 15px rgba(0, 229, 255, 0.8);
 }
 
-.name:hover {
-  background-image: linear-gradient(to right, #6f6cb6, #4e4baa, #3a29ad, #03088f, #e70808);
-  background-size: 200% 100%;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-position: -200% 0;
+.cursor {
+  color: #00e5ff;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .subtitle {
-  font-size: 25px;
+  font-size: 22px;
   font-weight: 500;
-  color: var(--subtitle-color);
+  color: #a5f2ff;
+  font-family: "Courier New", monospace;
+  text-shadow: 0px 0px 5px rgba(0, 229, 255, 0.5);
+}
+
+.buttons {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .button {
@@ -84,75 +118,25 @@
   align-items: center;
   font-size: 16px;
   padding: 10px 20px;
-  font-weight: 500;
-  color: #000000;
-  text-decoration: #03088f;
-  background:rgb(200, 203, 208);
-  border: none;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(90deg, #0048ff 35%, #002b80 100%);
+  border: 1px solid #00e5ff;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 229, 255, 0.6);
+  gap: 12px;
 }
 
 .button:hover {
-  background: var(--button-bg-hover);
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, #0084ff 35%, #0033aa 100%);
+  transform: scale(1.08);
+  box-shadow: 0px 0px 15px rgba(0, 229, 255, 0.9);
 }
 
-.button:active {
-  transform: scale(0.98);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.button-icon {
-  width: 20px;
-  height: 20px;
+.button i {
   margin-right: 8px;
-}
-
-@media (min-width: 768px) {
-  .name {
-    font-size: 50px;
-  }
-
-  .subtitle {
-    font-size: 30px;
-  }
-
-  .button {
-    font-size: 18px;
-    padding: 12px 24px;
-  }
-
-  .buttons {
-    gap: 25px;
-  }
-
-  .text-image {
-    gap: 40px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .name {
-    font-size: 65px;
-  }
-
-  .subtitle {
-    font-size: 45px;
-  }
-
-  .profile-image {
-    height: 450px;
-    width: 450px;
-  }
-
-  .text-image {
-    gap: 80px;
-  }
-
-  .buttons {
-    gap: 35px;
-  }
+  font-size: 18px;
 }

@@ -1,111 +1,113 @@
 .formacao {
-  background-color: #ffffff;
-  padding-top: 210px;
-  border-top: 1px solid rgb(0, 0, 0);
-  border-bottom: 1px solid rgb(0, 0, 0);
-  border-left: 1px solid rgb(0, 0, 0);
-  border-right: 1px solid rgb(0, 0, 0);
+  background-color: #0f1119;
+  padding: 240px 20px;
+  text-align: center;
+  border-top: 2px solid #00e5ff; /* Azul Neon */
+  box-shadow: 0px 0px 15px rgba(0, 229, 255, 0.5);
 }
 
+/* Título da seção */
 .titulo-section {
-  position: relative;
-  top: -1em;
-  background: #000000;
-  -webkit-background-clip: text;
-  display: flex;
-  font-size: 52px;
-  margin: 0 auto; 
-  width: fit-content; 
-  margin-top: 1px;
+  font-size: 48px;
+  color: #00e5ff; /* Azul Neon */
+  text-shadow: 0px 0px 10px rgba(0, 229, 255, 0.7);
+  font-family: "Courier New", monospace;
+  margin-bottom: 40px;
 }
 
-.cards-container {
-  top: -1em;
-}
-
+/* Lista de cards */
 .formacao-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin: 0 auto;
-  padding: 0;
+  gap: 40px;
 }
 
+/* Cartão de formação */
 .formacao-card {
-  position: relative;
-  border-radius: 1em;
-  overflow: hidden;
-  width: 40vw;
-  height: 160px;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  box-shadow: 0 10px 20px rgba(32, 23, 38, 0.5);
-  background-color: #acacac;
-  border-right: 1px solid rgba(24, 7, 7, 0.5);
-  border-bottom: 1px solid rgba(42, 12, 88, 0.348);
-  margin: 1em auto;
-  transition: all .3s;
-}
-
-.formacao-card-img > img {
-  object-fit: cover;
-  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  max-height: 100%;
+  background: rgba(20, 20, 30, 0.9);
+  border-radius: 12px;
+  padding: 20px;
+  width: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 229, 255, 0.7);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+.formacao-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(0, 229, 255, 0.9);
+}
+
+/* Imagem das instituições */
+.formacao-card-img img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Conteúdo do card */
 .formacao-card-content {
-  padding: .7em;
-  width: 100%;
-  
+  flex: 1;
+  text-align: left;
+  padding-left: 20px;
+  color: #a5f2ff;
 }
 
+/* Nome da instituição */
 .formacao-card-content h3 {
-  font-size: 36px;
+  font-size: 22px;
+  color: #00e5ff; /* Azul Neon */
+  font-family: "Courier New", monospace;
 }
 
+/* Texto informativo */
 .text {
-  color: #c2c0c0;
-  font-size: 24px;
-  letter-spacing: 1px;
-  margin-bottom: 0.5em;
+  font-size: 18px;
+  color: #a5f2ff;
 }
 
+/* Data de término */
 .encerra {
-  font-size: 16px;
-  position: relative;
-  top: -.5em;
+  font-size: 14px;
+  color: #bbb;
 }
 
-.content {
-  position: relative;
-}
-
+/* Botão Certificados */
 .botao {
-
   display: inline-block;
-  padding: 8px 6px; 
+  padding: 8px 12px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: bold;
   color: white;
-  background: linear-gradient(90deg, hsl(191, 83%, 28%) 35%, rgba(55, 39, 104, 0.655) 100%);
-  border: none;
+  text-decoration: none;
+  background: linear-gradient(90deg, #0048ff 35%, #002b80 100%); /* Azul Cibernético */
   border-radius: 8px;
-  cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0px 0px 10px rgba(0, 229, 255, 0.5);
 }
 
 .botao:hover {
-  background-color: #6741c7;
-  transform: scale(1.05);
+  background: linear-gradient(90deg, #0084ff 35%, #0033aa 100%);
+  transform: scale(1.08);
+  box-shadow: 0px 0px 15px rgba(0, 229, 255, 1);
 }
 
 .botao:active {
-  background-color: #4b3094; 
-  transform: scale(0.95); 
+  transform: scale(0.95);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .formacao-card {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .formacao-card-content {
+    padding-left: 0;
+  }
 }

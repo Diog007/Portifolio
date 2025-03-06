@@ -1,97 +1,110 @@
-.skills{
-    justify-content:center;
-    align-items:center;
-    padding-top: 120px;
-    background-color: #f0f4f8;
-    border-top: 1px solid rgb(0, 0, 0);
-    border-bottom: 1px solid rgb(0, 0, 0);
-    border-left: 1px solid rgb(0, 0, 0);
-    border-right: 1px solid rgb(0, 0, 0);
+.skills {
+  justify-content: center;
+  align-items: center;
+  padding-top: 97px;
+  background-color: #0f1119;
+  border-top: 2px solid #00e5ff; /* Azul Neon */
+  box-shadow: 0px 0px 15px rgba(0, 229, 255, 0.5);
 }
 
-.imagemSkill{
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    padding-right: 2px;
-    height: 120px;
-    
-}
-
+/* Título da seção */
 .titulo-section {
-    font-size: 52px;
-    font-weight: bold;
-    margin-bottom: 1em;
-    text-align: center;
-    color: #000000;
+  font-size: 52px;
+  font-weight: bold;
+  text-align: center;
+  color: #00e5ff; /* Azul Neon */
+  text-shadow: 0px 0px 15px rgba(0, 229, 255, 0.8);
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 38px;
+}
+
+.cyber-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+/* Categorias das habilidades */
+.skill-category {
+  background-color: #1e1e2f;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 229, 255, 0.5);
+}
+
+/* Título da categoria */
+.category-title {
+  color: #00e5ff; /* Azul Neon */
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 10px rgba(0, 229, 255, 0.8);
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Cartões das Skills */
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 229, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid rgba(0, 229, 255, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 229, 255, 0.5);
+  cursor: pointer;
+}
+
+/* Ícones das Skills */
+.skill-card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+  filter: drop-shadow(0px 0px 5px rgba(0, 229, 255, 0.5));
+}
+
+/* Nome das Skills */
+.skill-card span {
+  color: #a5f2ff;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Hover no Card */
+.skill-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px rgba(0, 229, 255, 1);
+  background-color: rgba(0, 229, 255, 0.2);
+}
+
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+  .skill-grid {
+    flex-direction: column;
+    align-items: center;
   }
-  
+}
+
+@media only screen and (max-width: 480px) {
   .skills-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 2em;
+    width: 95%;
   }
-  
-  .hard-skills {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 4em;
-    background-color: #b9b9b9;
-    border-radius: 1em;
-    padding: 7em;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 1em;
-    background-color: #5e7484;
-    padding: 2.0em;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.925);
-    transition: all 8s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 18px;
-
-  }
-  
-  .icon-hs {
-    font-size: 4em;
-    color: #333;
-    transition: all 0.3s ease;
-  }
-  
-  .icon-hs:hover {
-    color: #ce0f55;
-  }
-  
-  .titulo-hs {
-    margin-top: 1em;
-    font-size: 1.2em;
-    color: #555;
-  }
-
-  .skillicon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 60px;
-  }
-  
-  @media only screen and (max-width: 768px) {
-    .hard-skills {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media only screen and (max-width: 480px) {
-    .hard-skills {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+}

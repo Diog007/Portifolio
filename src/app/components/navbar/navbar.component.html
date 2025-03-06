@@ -1,28 +1,16 @@
-<header class="tudo">
-  <nav class="navbar navbar-expand-lg nav sticky-top fixed-top shadow" style="background-color: #141617;">
-
-      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="display: flex; align-items: center;"> <!-- Modificado para flex -->
-          <img src="./assets/logo1.png" alt="Logo" >
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#sobre">Sobre mim</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#formacao">Formação</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#projetos">Meus Projetos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#contatos">Contato</a>
-          </li>
-        </ul>
-      </div>
+<header class="navbar-container">
+  <nav class="navbar">
+    <div class="logo">
+      <img src="./assets/logo1.png" alt="Logo">
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" [class.active]="isActive('home')" class="nav-item">Home</a></li>
+      <li><a href="#sobre" [class.active]="isActive('sobre')" class="nav-item">Sobre Mim</a></li>
+      <li><a href="#certificados" [class.active]="isActive('certificados')" class="nav-item">Certificações</a></li>
+      <li><a href="#skills" [class.active]="isActive('skills')" class="nav-item">Skills</a></li>
+      <li><a href="#formacao" [class.active]="isActive('formacao')" class="nav-item">Formação</a></li>
+      <li><a href="#projetos" [class.active]="isActive('projetos')" class="nav-item">Meus Projetos</a></li>
+      <li><a href="#contatos" [class.active]="isActive('contatos')" class="nav-item">Contato</a></li>
+    </ul>
   </nav>
 </header>

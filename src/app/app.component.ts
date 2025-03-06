@@ -11,13 +11,14 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import * as AOS from 'aos';
+import { CertificadosComponent } from './components/certificados/certificados.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, NavbarComponent, FormacaoComponent,
      FundoComponent, SobreComponent, SkillsComponent,
-      ProjetosComponent, FooterComponent, HomeComponent, ContactComponent],
+      ProjetosComponent, FooterComponent, HomeComponent, ContactComponent, CertificadosComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
