@@ -81,6 +81,13 @@ export class CertificadosComponent {
         data: "Julho de 2024",
         logo: "assets/logos/aluragpt.png",
         link: "https://cursos.alura.com.br/certificate/991110f1-af8b-4820-ac74-fdced81d63ee?lang"
+      },
+      {
+        titulo: "NMAP e WIRESHARK para Segurança da Informação",
+        empresa: "Udemy",
+        data: "Março de 2025",
+        logo: "assets/logos/udemynmap.png",
+        link: "https://www.udemy.com/certificate/UC-362e7b67-f125-4aeb-8a3d-6e4ca98bc4aa/"
       }
     ];
   }
