@@ -34,6 +34,20 @@ export class CertificadosComponent {
         link: "https://www.credly.com/badges/c9135e8e-024b-42b1-9654-940eb010ae1e/linked_in_profile"
       },
       {
+        titulo: "NMAP e WIRESHARK para Segurança da Informação",
+        empresa: "Udemy",
+        data: "Março de 2025",
+        logo: "assets/logos/udemynmap.png",
+        link: "https://www.udemy.com/certificate/UC-362e7b67-f125-4aeb-8a3d-6e4ca98bc4aa/"
+      },
+      {
+        titulo: "CyberSecurity",
+        empresa: "Fiap",
+        data: "Março de 2025",
+        logo: "assets/logos/CsFiap.png",
+        link: "https://on.fiap.com.br/local/nanocourses/gerar_certificado.php?chave=8e0faa60fe8e531937c6d23849683cbd&action=view"
+      },
+      {
         titulo: "Linux Fundamentos",
         empresa: "FIAP",
         data: "Outubro de 2024",
@@ -46,13 +60,6 @@ export class CertificadosComponent {
         data: "Setembro de 2024",
         logo: "assets/logos/cisco.png",
         link: "https://www.credly.com/badges/f1a46e80-c8ef-4e40-9984-3ae9a9056448/linked_in_profile"
-      },
-      {
-        titulo: "NMAP e WIRESHARK para Segurança da Informação",
-        empresa: "Udemy",
-        data: "Março de 2025",
-        logo: "assets/logos/udemynmap.png",
-        link: "https://www.udemy.com/certificate/UC-362e7b67-f125-4aeb-8a3d-6e4ca98bc4aa/"
       },
       {
         titulo: "Fundamentos em Cibersegurança",
