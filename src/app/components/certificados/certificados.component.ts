@@ -1,14 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { CertificadoComponent } from "../certificado/certificado.component";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-certificados',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, CertificadoComponent, RouterLink],
   templateUrl: './certificados.component.html',
   styleUrl: './certificados.component.scss'
 })
 export class CertificadosComponent {
+
+  
 
 
     certificados = [
@@ -104,5 +108,6 @@ export class CertificadosComponent {
         link: "https://cursos.alura.com.br/certificate/991110f1-af8b-4820-ac74-fdced81d63ee?lang"
       },
     ];
+
   }
   
