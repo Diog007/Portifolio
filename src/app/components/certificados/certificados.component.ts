@@ -12,7 +12,20 @@ import { RouterLink } from '@angular/router';
 })
 export class CertificadosComponent {
 
-  
+  isImageOpen = false;  // Controle de visibilidade do overlay
+  selectedImage: string = '';  // A imagem que será exibida no overlay
+
+  // Método para abrir a imagem no overlay
+  openImage(image: string) {
+    this.selectedImage = image;
+    this.isImageOpen = true;
+  }
+
+  // Método para fechar o overlay
+  closeImage() {
+    this.isImageOpen = false;
+    this.selectedImage = '';
+  }
 
 
     certificados = [
@@ -56,7 +69,7 @@ export class CertificadosComponent {
         empresa: "FIAP",
         data: "Outubro de 2024",
         logo: "assets/logos/fiap.png",
-        link: "https://on.fiap.com.br/pluginfile.php/1/local_nanocourses/certificado_nanocourse/128651/4d845488d5f5adc2fc8a953d88ce3ece/certificado.png"
+        link: "https://on.fiap.com.br/local/nanocourses/gerar_certificado.php?chave=18b17e003ab9e60a5f640b435ca8347b&action=view"
       },
       {
         titulo: "CCNA: Introduction to Networks",

@@ -17,14 +17,14 @@
 </header>
 <section id="certificado" class="section vh-200">
   <div class="container-title">
-    <h2 class="title-project">🎓 CERTIFICAÇÕES PROGRAMÇÃO</h2>
+    <h2 class="title-project">🎓 CERTIFICAÇÕES & CURSOS</h2>
   </div>
 
   <div class="container-project">
     <div *ngFor="let certificado of certificados; let i = index" 
          class="cards cyber-card" data-aos="fade-up" >
       <div class="card-text">
-        <img [src]="certificado.logo" [alt]="certificado.titulo" class="cert-logo">
+        <img [src]="certificado.logo" [alt]="certificado.titulo" class="cert-logo" (click)="openImage(certificado.logo)">
         <h1 class="title-card">{{ certificado.titulo }}</h1>
         <p class="text-card">{{ certificado.empresa }}</p>
         <p class="text-card">Emitido em: {{ certificado.data }}</p>
@@ -34,5 +34,16 @@
       </div>
     </div>
   </div>
+
+  <!-- Overlay para exibir a imagem ampliada -->
+  <div class="overlay"  data-aos="fade" data-aos-delay="150"  *ngIf="isImageOpen">
+    <div class="overlay-content">
+      <img [src]="selectedImage" alt="Imagem Ampliada" class="overlay-image">
+      <button class="close-overlay" (click)="closeImage()">Fechar</button>
+    </div>
+  </div>
 </section>
+
+
+
 <app-footer></app-footer>

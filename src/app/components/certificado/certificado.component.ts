@@ -12,6 +12,22 @@ import { Router, RouterLink } from '@angular/router';
   styleUrl: './certificado.component.scss'
 })
 export class CertificadoComponent {
+
+  isImageOpen = false;  // Controle de visibilidade do overlay
+  selectedImage: string = '';  // A imagem que será exibida no overlay
+
+  // Método para abrir a imagem no overlay
+  openImage(image: string) {
+    this.selectedImage = image;
+    this.isImageOpen = true;
+  }
+
+  // Método para fechar o overlay
+  closeImage() {
+    this.isImageOpen = false;
+    this.selectedImage = '';
+  }
+  
   activeSection: string = 'home';
 
   constructor(private router: Router) {}
